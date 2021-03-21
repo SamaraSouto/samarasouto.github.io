@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">   
+        <link rel = "stylesheet" href = "index.css">
+
+        <title>Samara Souto</title>
+    </head>
+        <header> 
+            <h1>________________________________Currículo da Samara________________________________</h1>
+        </header>
+        
+    <body class="claro">
+        <button id="acender"> MODO CLARO</button>
+        <button id="escuro"> MODO ESCURO</button>
+
+        <article class="regiaorosa">
+            <img id="samara" src="foto.jpeg.jfif" class="perfil1" alt="samara" width= 300px height= 330px>
+            
+            <h2>Informações pessoais</h2>
+       <P> Idade: 17 anos</P>
+       <P> Data de nascimento: 13.04.2003</P>     
+       <P> Localização: Vila Gustavo - Zona Norte - SP</P>
+       <p> E-mail para contato :</p>
+       <a href="mailto:samarasouto.1304@gmail.com">samarasouto.1304@gmail.com</a>
+       <a href="mailto:samara.souto@aluno.ifsp.edu.br">samara.souto@aluno.ifsp.edu.br</a>
+       <p> Telefone: (11) 99742-6521</p>
+       <p> Redes sociais:</p>
+       <a href="https://www.instagram.com/saahsouto/" target="_blank" rel="external" hreflang="pt" type="text/html" >  Instagram</a>
+    </article>
+
+    <br>
+    <article class="regiaorosa">
+        <h2> Área de atuação </h2>
+        <p>Informatica</p>
+    </article>
+    <br>
+    <article class="regiaorosa">
+        <h2>Formação</h2>
+        <p>Ensino Fundamental completo, Colégio Prof Adriana Sodré </p>
+        <p>Ensino Medio, Instituto Federal de Educação Ciência e Tecnologia de São Paulo - 2021 (Cursando 3°ano )</p>
+         <h3>Cursos</h3>
+        <p>Tecnico em informatica - Instituto Federal de Educação Ciência e Tecnologia de São Paulo - 2021(Cursando)</p>
+    </article>
+    <br>
+    <article class="regiaorosa">
+        <h2>Conhecimentos</h2>
+        <p>* Word </p>
+        <p>* Excel </p>
+        <p>* Access </p>
+        <p>* PowerPoint </p>
+        <p>* Windows 7, 8 e 10 </p>
+        <p>* Linguagens de programação java, c++ e html </p>
+    </article>
+    <br>
+    <article class="regiaorosa">
+        <h2>Qualidades</h2>
+        <p>* Pontual </p>
+        <p>* Criativa </p>
+        <p>* Organizada </p>
+        <p>* Comunicativa </p>
+        <p>* Dedicada </p>
+    </article>
+    <br>
+    <article class="regiaorosa">
+        <h2>Idiomas</h2>
+        <p>Porttugues fluente </p>
+        <p>Espanhol basico </p>
+        <p>Inglês basico </p>
+    </article>
+    </body>
+
+    <script src= "jquery-3.5.1.min.js"> </script>
+
+<script>
+
+    var foto = document.getElementById("samara")
+
+    foto.onmouseover = function(){
+        foto.classList.remove("foto_sem_mouse");
+        foto.classList.add("foto_com_mouse");
+    }
+
+    foto.onmouseout = function(){
+        foto.classList.remove("foto_com_mouse");
+        foto.classList.add("foto_sem_mouse");
+    }
+    
+
+    $(document).ready(function() {
+    $("#acender").click(function(){
+        $("body").removeClass("escuro");
+        $("body").addClass("claro");
+        $("article").css("background-color"," rgb(248, 179, 222)");
+
+    })
+    $("#escuro").click(function(){
+        $("body").removeClass("claro");
+        $("body").addClass("escuro");
+        $("article").css("background-color","#EE82EE");
+
+    })
+});
+
+</script>
+
+</html>

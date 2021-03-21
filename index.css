@@ -1,0 +1,43 @@
+a{
+    display: block;
+} 
+
+h1{
+text-align-last: center;
+}
+
+/* #samara{
+    width: auto;
+    height: 330px;
+} */
+
+.regiaorosa{
+background-color:  rgb(248, 179, 222);
+border-radius:10px;
+padding: 3%;
+right: auto;   
+}  
+    
+.perfil1{
+float:right
+}
+.claro{
+    background-color: white;
+}
+
+.escuro{
+    background-color:  rgb(187 141 170 / 84%);
+}
+
+
+.foto_sem_mouse{
+    width: 300px;
+    height: 330px;
+    transition: 0.5s;
+}
+
+.foto_com_mouse{
+    width: 350px;
+    height: 350px;
+    transition: 0.5s;
+}
